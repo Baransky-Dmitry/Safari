@@ -1,0 +1,26 @@
+header.header
+  .container
+    .header__inner
+      .header__top
+        a.logo(href="#")
+          img.logo__img(src="img/logo.svg" alt="")
+        .header__phone Заказ туров и бронирование:
+          a.header__phone-number(href="tel:80508543543") тел. 8-050-8-543-543
+        nav.menu
+          ul.menu__list
+            +menuLink('#','Бронирование')
+            +menuLink('#','Экскурсии')
+            +menuLink('#','Туры')
+            +menuLink('#','Об Африке')
+            +menuLink('#','О нас')
+      h1.header__title Сафари по Африке
+      .header__content
+        p.header__descr. 
+          Туры по самомым экзотическим местам 
+          Поехали с нами за новыми впечатлениями!
+        |
+        | 
+        a.header__btn(href="#") Оставить заявку
+        .header__arrow
+          a.header__arrow-link(href="#")
+            img.header__arrow-img(src="img/arrow.svg", alt="")

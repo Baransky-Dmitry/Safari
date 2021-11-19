@@ -1,0 +1,6 @@
+mixin menuLink (link,name,active)
+	li.menu__item
+		if active
+			a(href=link).menu__link.menu__link--active=name
+		else
+			a(href=link).menu__link=name

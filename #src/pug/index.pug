@@ -1,0 +1,109 @@
+extends layout/main
+
+block variables
+	-var title = 'Safari'
+
+block content
+	.direction
+		.container
+			.direction__inner
+				.direction__item
+					img.direction__img(src="img/direction-1.jpg" alt="")
+					p.direction__text Намибия
+				.direction__item
+					img.direction__img(src="img/direction-2.jpg" alt="")
+					p.direction__text Танзания
+				.direction__item
+					img.direction__img(src="img/direction-3.jpg" alt="")
+					p.direction__text Кения
+				.direction__item
+					img.direction__img(src="img/direction-4.jpg" alt="")
+					p.direction__text Ботсвана
+				.direction__item
+					img.direction__img(src="img/direction-5.jpg" alt="")
+					p.direction__text Кейптаун
+				.direction__item
+					img.direction__img(src="img/direction-6.jpg" alt="")
+					p.direction__text Мадагаскар
+				.direction__item
+					img.direction__img(src="img/direction-7.jpg" alt="")
+					p.direction__text Занзибар
+				.direction__item
+					img.direction__img(src="img/direction-8.jpg" alt="")
+					p.direction__text ЮАР
+				.direction__item
+					img.direction__img(src="img/direction-9.jpg" alt="")
+					p.direction__text Мозамбик
+				.direction__item
+					img.direction__img(src="img/direction-10.jpg" alt="")
+					p.direction__text Замбия
+				.direction__item
+					img.direction__img(src="img/direction-11.jpg" alt="")
+					p.direction__text Конго
+	section.travel-info
+		.container
+			h2.travel-info__title.title Основные направления
+			.travel-info__items
+				.travel-info__item
+					img.travel-info__img(src="img/icons/icon-1.svg" alt="")
+					p.travel-info__text Полная организация отдыха: групповые и индивидуальные туры.
+				.travel-info__item
+					img.travel-info__img(src="img/icons/icon-2.svg" alt="")
+					p.travel-info__text Организация трансфера из любой точки мира
+				.travel-info__item
+					img.travel-info__img(src="img/icons/icon-3.svg" alt="")
+					p.travel-info__text Проживание в отелях по маршруту
+				.travel-info__item
+					img.travel-info__img(src="img/icons/icon-4.svg" alt="")
+					p.travel-info__text Аренда автомобилей и любого вида транспорта
+				.travel-info__item
+					img.travel-info__img(src="img/icons/icon-5.svg" alt="")
+					p.travel-info__text Медицинская страховка
+				.travel-info__item
+					img.travel-info__img(src="img/icons/icon-6.svg" alt="")
+					p.travel-info__text Сопровождение русскоговорящих гидов
+				.travel-info__item
+					img.travel-info__img(src="img/icons/icon-7.svg" alt="")
+					p.travel-info__text Организация VIP-туров
+	section.popular
+		.container
+			h2.popular__title.title Популярные предложения
+			.popular__items
+				a.popular__link(href="#")(style="background-image: url('img/popular-1.jpg');")
+					h3.popular__link-title ПУТЕШЕСТВИЕ ПО НАМИБИИ
+					p.popular__price от 3000 $
+				a.popular__link(href="#")(style="background-image: url('img/popular-2.jpg');")
+					h3.popular__link-title КЛАССИКА КЕНИИ
+					p.popular__price от 3500 $
+				a.popular__link(href="#")(style="background-image: url('img/popular-3.jpg');")
+					h3.popular__link-title.link-title--big 
+						| САМЫЕ ПОПУЛЯРНЫЕ САФАРИ ПАРКИ И ЗАПОВЕДНИКИ ТАНЗАНИИ
+					p.popular__country Танзания
+					p.popular__time 7 дней / 6 ночей
+					p.popular__price от 1700 $
+				a.popular__link(href="#")(style="background-image: url('img/popular-4.jpg');")
+					h3.popular__link-title ИССЛЕДОВАНИЕ БОТСВАНЫ
+					p.popular__price от 2500 $
+				a.popular__link(href="#")(style="background-image: url('img/popular-5.jpg');")
+					h3.popular__link-title ПУТЕШЕСТВИЕ ЧЕРЕЗ 5 СТРАН ЮЖНОЙ АФРИКИ
+					p.popular__price от 5000 $
+				a.popular__link(href="#")(style="background-image: url('img/popular-6.jpg');")
+					h3.popular__link-title.link-title--big 
+						| ГРАНДИОЗНОЕ ПРИКЛЮЧЕНИЕ ПО 9 СТРАНАМ АФРИКИ
+					p.popular__country ЮАР, Замбия, Намибия, Зимбабве, Ботсвана, Мозамбик, Танзания, Кения
+					p.popular__time 24 дня / 23 ночи
+					p.popular__price от 6000 $
+				a.popular__link(href="#")(style="background-image: url('img/popular-7.jpg');")
+					h3.popular__link-title ВЕЛИКОЛЕПНЫЙ КЕЙПТАУН
+					p.popular__price от 3500 $
+				a.popular__link(href="#")(style="background-image: url('img/popular-8.jpg');")
+					h3.popular__link-title ПУТЕШЕСТВИЕ ПО ЮАР 
+					p.popular__price от 2500 $
+				a.popular__link(href="#")(style="background-image: url('img/popular-9.jpg');")
+					h3.popular__link-title ВЕЛИКАЯ МИГРАЦИЯ В ТАНЗАНИИ И ОТДЫХ НА ЗАНЗИБАРЕ
+					p.popular__price от 1700 $
+				a.popular__link(href="#")(style="background-image: url('img/popular-10.jpg');")
+					h3.popular__link-title ОТ КЕЙПТАУНА ДО ВОДОПАДА ВИКТОРИЯ
+					p.popular__price от 2500 $
+block script
+	script(src="js/main.js") 
