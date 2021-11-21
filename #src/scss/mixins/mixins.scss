@@ -13,5 +13,5 @@
 @mixin tr($x,$y,$z){transform: translate3d($x, $y, $z);};
 @mixin flexbox() {display: -webkit-box;display: -moz-box;display: -ms-flexbox;display: -webkit-flex;display: flex;}
 @mixin flexorder($val){-webkit-box-ordinal-group: $val;-moz-box-ordinal-group: $val;-ms-flex-order: $val;-webkit-order: $val;order: $val;}
-@mixin grid($col,$fr,$gap-b,$gap-r) {display: grid;grid-template-columns: repeat($col, $fr + fr);grid-gap: ($gap-b + px $gap-r + px);}
+@mixin grid($col,$fr,$gap) {display: grid;grid-template-columns: repeat($col, $fr + fr);grid-gap: $gap + px;}
 //</МИКСИНЫ>===============================================================================================

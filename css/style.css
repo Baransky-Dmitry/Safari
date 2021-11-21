@@ -250,7 +250,7 @@ h6 {
   display: grid;
   -ms-grid-columns: (1fr)[4];
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 32px 32px;
+  grid-gap: 32px;
 }
 
 .direction__text {
@@ -424,6 +424,58 @@ h6 {
 }
 
 /* Gallery */
+.gallery {
+  padding: 50px 0 105px;
+  background-color: #886239;
+}
+
+.gallery__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 39px;
+  padding-right: 159px;
+}
+
+.gallery__title {
+  color: #ffffff;
+}
+
+.gallery__link {
+  font-size: 16px;
+  line-height: 19px;
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+  color: #ffffff;
+}
+
+.gallery__item-inner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 32px;
+}
+
+.slick-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: -85px;
+  right: 0;
+}
+
+.slick-prev {
+  right: 60px;
+}
+
 /* Footer */
 /* Styles for animated modal */
 /* Start state */

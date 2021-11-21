@@ -50,7 +50,7 @@ $md1: 15;
   padding: 100px 0;
   // .direction__inner
   &__inner {
-    @include grid(4, 1, 32, 32);
+    @include grid(4, 1, 32);
     // display: grid;
     // grid-template-columns: repeat(4, 1fr);
     // grid-gap: 32px;
@@ -85,10 +85,9 @@ $md1: 15;
   }
   // .travel-info__items
   &__items {
-    @include grid(4, 1, 67, 56);
-    // display: grid;
-    // grid-template-columns: repeat(4, 1fr);
-    // grid-gap: 67px 56px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 67px 56px;
   }
   // .travel-info__item
   &__item {
@@ -230,48 +229,57 @@ $md1: 15;
 //==========================================================================================================
 /* Gallery */
 .gallery {
-
+  padding: 50px 0 105px;
+  background-color: #886239;
   // .gallery__top
-
   &__top {
+    @include flexbetween();
+    align-items: center;
+    margin-bottom: 39px;
+    padding-right: 159px;
   }
-
   // .gallery__title
-
   &__title {
+    color: #ffffff;
   }
-
   // .gallery__link
-
   &__link {
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration-line: underline;
+    color: #ffffff;
   }
-
   // .gallery__slider
-
   &__slider {
   }
-
   // .gallery__item
-
   &__item {
   }
-
   // .gallery__item-inner
-
   &__item-inner {
+    @include grid(3,1,32);
+    // display: grid;
+    // grid-template-columns: repeat(3, 1fr);
+    // grid-gap: 32px;
   }
-
   // .gallery__item-link
-
   &__item-link {
   }
-
   // .gallery__item-img
-
   &__item-img {
   }
 }
-
+.slick-btn {
+  background-color: transparent; //убираем белый фон
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: -85px;
+  right: 0;
+}
+.slick-prev {
+  right: 60px;
+}
 //==========================================================================================================
 
 //</ОСНОВНОЙ БЛОК>====================================================================================================
