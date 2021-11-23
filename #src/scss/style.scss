@@ -394,6 +394,8 @@ $md1: 15;
     font-size: 16px;
     line-height: 130%;
     text-decoration: underline;
+    display: flex;
+    align-items: center;
   }
   // .booking__checkbox
   &__checkbox {
@@ -403,6 +405,26 @@ $md1: 15;
     height: 1px;
     overflow: hidden;
     clip: rect(0 0 0 0);
+    padding-left: 45px;
+    &:checked + &-style::before {
+      content: '';
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      background-color: #c4c4c4;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  // .booking__checkbox-style
+  &__checkbox-style {
+    width: 26px;
+    height: 26px;
+    border: 2px solid #C4C4C4;
+    border-radius: 2px;
+    position: absolute;
+    margin-left: -45px;
   }
 }
 

@@ -626,6 +626,12 @@ h6 {
   font-size: 16px;
   line-height: 130%;
   text-decoration: underline;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .booking__checkbox {
@@ -634,6 +640,29 @@ h6 {
   height: 1px;
   overflow: hidden;
   clip: rect(0 0 0 0);
+  padding-left: 45px;
+}
+
+.booking__checkbox:checked + .booking__checkbox-style::before {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: #c4c4c4;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.booking__checkbox-style {
+  width: 26px;
+  height: 26px;
+  border: 2px solid #C4C4C4;
+  border-radius: 2px;
+  position: absolute;
+  margin-left: -45px;
 }
 
 /* Footer */
