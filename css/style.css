@@ -529,6 +529,113 @@ h6 {
   color: #1F1E1E;
 }
 
+/* Booking */
+.booking {
+  padding: 75px 0;
+  background-color: #EAEAEA;
+}
+
+.booking__title {
+  font-weight: 700;
+  margin-bottom: 43px;
+}
+
+.booking__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  max-width: 832px;
+  margin: 0 auto;
+}
+
+.booking__input {
+  width: 256px;
+  height: 44px;
+  border: 1px solid #D9D9DE;
+  padding: 11px 14px 12px;
+  margin-bottom: 28px;
+}
+
+.booking__input::-webkit-input-placeholder {
+  font-size: 16px;
+  color: #C4C4C4;
+}
+
+.booking__input:-ms-input-placeholder {
+  font-size: 16px;
+  color: #C4C4C4;
+}
+
+.booking__input::-ms-input-placeholder {
+  font-size: 16px;
+  color: #C4C4C4;
+}
+
+.booking__input::placeholder {
+  font-size: 16px;
+  color: #C4C4C4;
+}
+
+.booking__area {
+  width: 100%;
+  height: 112px;
+  resize: none;
+  border: 1px solid #D9D9DE;
+  padding: 14px;
+  margin-bottom: 67px;
+}
+
+.booking__area::-webkit-input-placeholder {
+  font-size: 16px;
+  color: #C4C4C4;
+}
+
+.booking__area:-ms-input-placeholder {
+  font-size: 16px;
+  color: #C4C4C4;
+}
+
+.booking__area::-ms-input-placeholder {
+  font-size: 16px;
+  color: #C4C4C4;
+}
+
+.booking__area::placeholder {
+  font-size: 16px;
+  color: #C4C4C4;
+}
+
+.booking__btn {
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #886239;
+  border-radius: 30px;
+  padding: 20px 65px;
+  cursor: pointer;
+}
+
+.booking__label {
+  font-size: 16px;
+  line-height: 130%;
+  text-decoration: underline;
+}
+
+.booking__checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
 /* Footer */
 /* Styles for animated modal */
 /* Start state */

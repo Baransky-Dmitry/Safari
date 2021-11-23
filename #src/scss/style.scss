@@ -338,6 +338,74 @@ $md1: 15;
 }
 
 //==========================================================================================================
+/* Booking */
+.booking {
+  padding: 75px 0;
+  background-color: #EAEAEA;
+  // .booking__title
+  &__title {
+    font-weight: 700;
+    margin-bottom: 43px;
+  }
+  // .booking__form
+  &__form {
+    @include flexbetween();
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 832px;
+    margin: 0 auto;
+  }
+  // .booking__input
+  &__input {
+    width: 256px;
+    height: 44px;
+    border: 1px solid #D9D9DE;
+    padding: 11px 14px 12px;
+    margin-bottom: 28px;
+    &::placeholder {
+      font-size: 16px;
+      color: #C4C4C4;
+    }
+  }
+  // .booking__area
+  &__area {
+    width: 100%;
+    height: 112px;
+    resize: none;
+    border: 1px solid #D9D9DE;
+    padding: 14px;
+    margin-bottom: 67px;
+    &::placeholder {
+      font-size: 16px;
+      color: #C4C4C4;
+    }
+  }
+  // .booking__btn
+  &__btn {
+    font-size: 18px;
+    color: #ffffff;
+    background-color:  #886239;
+    border-radius: 30px;
+    padding: 20px 65px;
+    cursor: pointer;
+  }
+  // .booking__label
+  &__label {
+    font-size: 16px;
+    line-height: 130%;
+    text-decoration: underline;
+  }
+  // .booking__checkbox
+  &__checkbox {
+    // display: none;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+  }
+}
+
 //</ОСНОВНОЙ БЛОК>====================================================================================================
 
 //<ПОДКЛЮЧЕНИЕ FOOTER>=====================================================================================================
