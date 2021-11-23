@@ -51,13 +51,6 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
-.title {
-  text-align: center;
-  font-weight: 500;
-  font-size: 36px;
-  line-height: 130%;
-}
-
 label,
 input,
 button,
@@ -124,6 +117,13 @@ h6 {
   max-width: 1150px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.title {
+  text-align: center;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 130%;
 }
 
 /* Header */
@@ -474,6 +474,59 @@ h6 {
 
 .slick-prev {
   right: 60px;
+}
+
+/* Tour */
+.tour {
+  padding: 100px 0;
+}
+
+.tour__title {
+  font-weight: 700;
+  margin-bottom: 77px;
+}
+
+.tour__box {
+  -webkit-column-count: 2;
+  column-count: 2;
+  -webkit-column-gap: 46px;
+  column-gap: 46px;
+  border-bottom: 1px solid #D9D9DE;
+  padding-bottom: 50px;
+  margin-bottom: 44px;
+}
+
+.tour__text {
+  margin-bottom: 15px;
+}
+
+.tour__text span {
+  font-weight: 700;
+}
+
+.tour__info {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 70px;
+}
+
+.tour__info-item {
+  font-family: 'PT Serif', serif;
+  font-weight: 700;
+  font-size: 58px;
+  line-height: 60px;
+  text-align: center;
+  color: #886239;
+}
+
+.tour__info-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  color: #1F1E1E;
 }
 
 /* Footer */
