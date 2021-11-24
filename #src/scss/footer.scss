@@ -1,4 +1,69 @@
 /* Footer */
 //====================================================================================================
-    
+.footer {
+    background-color: #1F1E1E;
+    padding: 77px 0 81px;
+    // .footer__logo
+    &__logo {
+        text-align: center;
+        margin-bottom: 69px;
+    }
+    // .footer__box
+    &__box {
+        @include flexbetween();
+        font-size: 14px;
+        line-height: 130%;
+        color: #fff;
+        max-width: 832px;
+        margin: 0 auto;
+    }
+    // .footer__info
+    &__info {
+        width: 225px;
+    }
+    // .footer__box-title
+    &__box-title {
+        font-weight: 500;
+        margin-bottom: 7px;
+    }
+    // .footer__copy
+    &__copy {
+        opacity: 0.8;
+        margin-bottom: 3px;
+    }
+    // .footer__link
+    &__link {
+        text-decoration: underline;
+        color: #fff;
+    }
+    // .footer__adress
+    &__adress {
+        width: 164px;
+    }
+    // .footer__address-text
+    &__address-text {
+        opacity: 0.8;
+    }
+    // .footer__contacts
+    &__contacts {
+        width: 210px;
+    }
+    // .footer__phone
+    &__phone {
+        opacity: 0.8;
+        color: #fff;
+    }
+    // .footer__mail
+    &__mail {
+        opacity: 0.8;
+        color: #fff;
+        display: block;
+    }
+}
+.logo {
+    // .logo__img
+    &__img {
+    }
+}
+
 //====================================================================================================
